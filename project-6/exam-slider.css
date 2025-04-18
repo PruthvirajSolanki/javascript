@@ -1,0 +1,122 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+body 
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #2c3e50 50%, #3498db 50%);
+    flex-direction: column;
+    font-family: 'poppins', sans-serif;
+    font-style: bold;
+}
+
+.marquee
+{
+    margin-top: 15px;
+    height: 80px;
+    color: #fff;
+}
+
+.card
+{
+    background-color:#bfe9ff; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 900px;
+    height: 600px;
+    border-radius: 15px;
+    padding: 50px;
+}
+
+.slider 
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-container img 
+{
+    margin-top: 15px;
+    width: 600px;
+    height: 450px;
+    border-radius: 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.image-container 
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button.prev
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1;
+    transition: background-color 0.3s;
+}
+button.next 
+{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    z-index: 1;
+    transition: background-color 0.3s;
+}
+
+button.prev 
+{
+    left: 5px;
+}
+
+button.next 
+{
+    right: 5px;
+}
+
+button:hover 
+{
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev 
+{
+    position: absolute;
+    left: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.next 
+{
+    position: absolute;
+    right: -70px;
+    top: 50%;
+    transform: translateY(-50%);
+} 
