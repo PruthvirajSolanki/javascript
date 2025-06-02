@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Task Manager</title>
+    <link rel="stylesheet" href="finalexam.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2>Task Manager</h2>
+        <form id="task-form">
+            <input type="text" id="title" placeholder="Your title..." required />
+            <textarea id="description" placeholder="your description..." required></textarea>
+            <div class="form-group mb-3">
+            <label for="task-priority" class="form-label"><i class="form-p"></i> Priority:</label>
+            <select id="task-priority" class="form-control">
+                <option value="low">🟢 Low</option>
+                <option value="medium">🟡 Medium</option>
+                <option value="high">🔴 High</option>
+            </select>
+        </div>
+
+            <input type="date" id="dueDate" />
+            <button type="submit">Add Task</button>
+            <button type="button" id="cancelEdit" style="display:none;">Cancel Edit</button>
+        </form>
+
+        
+
+        <select id="filter">
+            <option value="all">All</option>
+            <option value="completed">Completed</option>
+            <option value="pending">Pending</option>
+        </select>
+
+        <p id="empty">No tasks yet.</p>
+        <table id="task-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Description</th>
+                    <th>Due</th>
+                    <th>Status</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <p id="counter"></p>
+    </div>
+
+    <script src="finalexam.js"></script>
+</body>
+
+</html>
