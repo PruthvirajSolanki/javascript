@@ -1,0 +1,53 @@
+body {
+  font-family: sans-serif;
+  background: linear-gradient(to bottom, #88d65b 50%, #381616 50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+main {
+  background: #1996c0;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 10px #ccc;
+  width: 300px;
+  text-align: center;
+}
+
+form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+#temp-box img {
+  width: 100px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+li {
+  margin: 5px 0;
+}
+
+.hidden {
+  display: none;
+}
